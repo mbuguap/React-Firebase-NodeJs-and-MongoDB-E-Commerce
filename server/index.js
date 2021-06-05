@@ -21,7 +21,7 @@ mongoose
 
 // middlewares
 app.use(morgan("dev"));
-app.use(express.json());
+app.use(express.json({ limit: "2mb" }));
 app.use(cors());
 
 // routes middleware
